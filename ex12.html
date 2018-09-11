@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12</title>
+</head>
+<body>
+<script>
+    const MOT_TRIEU=1000000;
+    const MOT_TRAM_TRIEU=1000000*100;
+    const MOT_TY=MOT_TRAM_TRIEU*10;
+    let a= parseInt(prompt("NHap vao so tien ban vay ngan hang:"));
+    let muc1= a*3/100;
+    let muc2= a*5/100;
+    let muc3= a*7/100;
+    if (a<=MOT_TRIEU) {
+        alert("ban vay it qua k mat tien lai")
+    }
+    if (a>MOT_TRIEU&&a<MOT_TRAM_TRIEU) {
+        alert("Tien lai cua ban la " +muc1+"VND");
+    } else  if(a>=MOT_TRAM_TRIEU&&a<MOT_TY) {
+        alert("Tien lai cua ban la "+muc2+"VND");
+    }else {
+        alert("tien lai cua ban la" +muc3 +"VND" );
+    }
+    </script>
+
+</body>
+</html>

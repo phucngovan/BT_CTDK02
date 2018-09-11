@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let a=parseInt(prompt("Nhap vao a:"));
+      let b=parseInt(prompt("Nhap vao b"));
+      let c=parseInt(prompt("Nhap vao c"));
+      let denta=Math.pow(b,2)-4*a*c;
+      if (denta>=0) {
+          document.write("x1=" +((-b+Math.sqrt(denta,2))/(2*a)));
+          document.write("x2="+((-b-Math.sqrt(denta,2))/(2*a)));
+      }else {
+          alert("Phuogng trinh vo nghiem !")
+      }
+  </script>
+
+</body>
+</html>
